@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: mall
+  profiles:
+    active: sit
+server:
+  port: 9000
+  servlet:
+    context-path: /mall
+
+management:
+  server:
+    port: 9001
+  endpoints:
+    jmx:
+      exposure:
+        include: '*'
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    root: info
+    com.starry.mall: debug
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread][%X{TRACE_ID}][%X{USER_ID}][%X{BUSINESS_KEY}] %-5level %logger{50} - %msg%n"
