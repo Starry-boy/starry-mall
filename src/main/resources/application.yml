@@ -3,24 +3,29 @@ spring:
     name: mall
   profiles:
     active: sit
+  security:
+    user:
+      name: starry
+      password: starry
+
 server:
   port: 9000
-  servlet:
-    context-path: /mall
+#  servlet:
+#    context-path: /mall
 
-management:
-  server:
-    port: 9001
-  endpoints:
-    jmx:
-      exposure:
-        include: '*'
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: always
+#management:
+#  server:
+#    port: 9001
+#  endpoints:
+#    jmx:
+#      exposure:
+#        include: '*'
+#    web:
+#      exposure:
+#        include: '*'
+#  endpoint:
+#    health:
+#      show-details: always
 logging:
   level:
     root: info

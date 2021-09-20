@@ -1,6 +1,6 @@
 package com.starry.mall.config;
 
-import com.starry.mall.filter.TradeFilter;
+import com.starry.mall.filter.TraceFilter;
 import com.starry.mall.utils.LogContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -16,14 +16,14 @@ import java.util.Arrays;
  * @description:
  * @date 2021/6/14 11:30
  */
-@Configuration
+//@Configuration
 public class WebConfig extends WebMvcConfigurationSupport {
 
 
     @Bean
-    public FilterRegistrationBean<TradeFilter> registrationBean(@Autowired LogContext logContext){
-        FilterRegistrationBean<TradeFilter> registrationBean = new FilterRegistrationBean();
-        registrationBean.setFilter(new TradeFilter(logContext));
+    public FilterRegistrationBean<TraceFilter> registrationBean(@Autowired LogContext logContext){
+        FilterRegistrationBean<TraceFilter> registrationBean = new FilterRegistrationBean();
+        registrationBean.setFilter(new TraceFilter(logContext));
         registrationBean.setOrder(1);
         registrationBean.setUrlPatterns(Arrays.asList("/*"));
         return registrationBean;

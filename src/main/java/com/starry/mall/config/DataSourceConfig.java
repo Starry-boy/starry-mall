@@ -23,7 +23,7 @@ public class DataSourceConfig {
     @Profile("dev")
     public DataSource devDataSource(){
         DruidDataSource druidDataSource = new DruidDataSource();
-        druidDataSource.setUrl("jdbc:mysql://localhost:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
+        druidDataSource.setUrl("jdbc:mysql://dev.computer:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai");
         druidDataSource.setUsername("root");
         druidDataSource.setPassword("Ratel@0804");
         druidDataSource.setInitialSize(5);

@@ -28,5 +28,6 @@ public class APILogDTO {
     private String responseResult;
     private Date createTime;
     private String businessKey;
+    private String threadName;
 
 }

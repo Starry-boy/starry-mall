@@ -16,7 +16,7 @@ import java.util.UUID;
  * @description: 链路追踪过滤器
  * @date 2021/6/14 11:26
  */
-public class TradeFilter implements Filter {
+public class TraceFilter implements Filter {
 
     @Autowired
     private LogContext logContext;
@@ -31,7 +31,7 @@ public class TradeFilter implements Filter {
         }
     }
 
-    public TradeFilter(LogContext logContext) {
+    public TraceFilter(LogContext logContext) {
         this.logContext = logContext;
     }
 }

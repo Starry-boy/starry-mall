@@ -1,15 +1,12 @@
 package com.starry.mall.exception;
 
-import com.starry.mall.commons.api.CommonResult;
 import com.starry.mall.commons.api.CommonResultCode;
 import com.starry.mall.commons.domain.WebResult;
 import com.starry.mall.utils.LogContext;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author ratel
