@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.starry.mall.admin.ums.log.mapper.UmsApiLogMapper">
+  <resultMap id="BaseResultMap" type="com.starry.mall.admin.ums.log.po.UmsApiLog">
+    <!--@mbg.generated-->
+    <!--@Table ums_api_log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="business_key" jdbcType="VARCHAR" property="businessKey" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="trace_id" jdbcType="VARCHAR" property="traceId" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="os" jdbcType="VARCHAR" property="os" />
+    <result column="browser" jdbcType="VARCHAR" property="browser" />
+    <result column="request_time" jdbcType="TIMESTAMP" property="requestTime" />
+    <result column="response_time" jdbcType="TIMESTAMP" property="responseTime" />
+    <result column="request_args" jdbcType="VARCHAR" property="requestArgs" />
+    <result column="response_result" jdbcType="LONGVARCHAR" property="responseResult" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modifyTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, business_key, user_id, trace_id, ip, os, browser, request_time, response_time, 
+    request_args, response_result, create_time, modify_time
+  </sql>
+</mapper>
